@@ -3,3 +3,6 @@ kiteconnect
 pandas
 numpy
 ta
+plotly
+requests
+urllib3

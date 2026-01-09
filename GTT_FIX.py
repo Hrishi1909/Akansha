@@ -60,9 +60,9 @@ if not hasattr(requests.Session, '_ssl_patched'):
 #   - st.session_state.api_secret
 
 # --- Market Timing Constants ---
-MARKET_OPEN = datetime.now().replace(hour=9, minute=15, second=0, microsecond=0)
-MARKET_CLOSE = datetime.now().replace(hour=15, minute=30, second=0, microsecond=0)
-STOP_TRADING = datetime.now().replace(hour=15, minute=15, second=0, microsecond=0)
+MARKET_OPEN = datetime.now().replace(hour=1, minute=15, second=0, microsecond=0)
+MARKET_CLOSE = datetime.now().replace(hour=23, minute=30, second=0, microsecond=0)
+STOP_TRADING = datetime.now().replace(hour=23, minute=15, second=0, microsecond=0)
 
 # --- Index Lot Sizes (Fixed) ---
 INDEX_LOT_SIZES = {
@@ -4923,3 +4923,4 @@ if __name__ == "__main__":
 # 2. Updated tabs count from 6 to 7
 # 3. Updated subtitle to mention GTT OCO
 # ============================================================================
+
